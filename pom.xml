@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.myproject</groupId>
+    <artifactId>ninja-demo-todo</artifactId>
+    <version>1.0</version>
+    <name>ninja-demo-todo</name>
+    <description>Demo application showcasing NinjaX framework with JDBI, H2, and templating</description>
+
+
+    <properties>
+        <ninja.version>0.2.12</ninja.version>
+        <junit.version>6.0.2</junit.version>
+    </properties>
+
+    <dependencies>
+        <!-- Core NinjaX framework -->
+        <dependency>
+            <groupId>org.r10r</groupId>
+            <artifactId>ninja-core</artifactId>
+            <version>${ninja.version}</version>
+        </dependency>
+        
+        <!-- Database components -->
+        <dependency>
+            <groupId>org.r10r</groupId>
+            <artifactId>ninja-db-common</artifactId>
+            <version>${ninja.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.r10r</groupId>
+            <artifactId>ninja-db-jdbi</artifactId>
+            <version>${ninja.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.r10r</groupId>
+            <artifactId>ninja-db-hikari</artifactId>
+            <version>${ninja.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.r10r</groupId>
+            <artifactId>ninja-db-flyway</artifactId> 
+            <version>${ninja.version}</version>
+        </dependency>
+        
+        <!-- Template engine -->
+        <dependency>
+            <groupId>org.r10r</groupId>
+            <artifactId>ninja-template</artifactId>
+            <version>${ninja.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.4.240</version>
+        </dependency>
+        
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.truth</groupId>
+            <artifactId>truth</artifactId>
+            <version>1.4.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.r10r</groupId>
+            <artifactId>ninja-test-utils</artifactId>
+            <version>${ninja.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.r10r</groupId>
+            <artifactId>ninja-test-db-utils</artifactId>
+            <version>${ninja.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.21.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>  
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.14.1</version>
+                <configuration>
+                    <source>25</source>
+                    <target>25</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.r10r</groupId>
+                <artifactId>ninja-maven-plugin</artifactId>
+                <version>${ninja.version}</version>
+                <configuration>
+                    <mainClass>org.ninjax.demo.todo.TodoApplication</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <mainClass>org.ninjax.demo.todo.TodoApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
