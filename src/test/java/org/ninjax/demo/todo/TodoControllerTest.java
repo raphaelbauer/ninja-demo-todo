@@ -12,6 +12,7 @@ import org.ninjax.core.Request;
 import org.ninjax.core.Result;
 import java.util.*;
 import org.mockito.Mockito;
+import org.ninjax.json.Json;
 import org.ninjax.test.TestRequest;
 
 /**
@@ -27,7 +28,8 @@ class TodoControllerTest {
     void setUp() {
         // given
         taskService = Mockito.mock(TaskService.class);
-        controller = new TodoController(taskService);
+        var json = new Json();
+        controller = new TodoController(taskService, json);
     }
 
     // showTasks endpoint
