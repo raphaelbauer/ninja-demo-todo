@@ -10,7 +10,7 @@
 
 
     <properties>
-        <ninja.version>0.2.13</ninja.version>
+        <ninja.version>0.2.14</ninja.version>
         <junit.version>6.0.2</junit.version>
     </properties>
 
@@ -18,7 +18,7 @@
         <!-- Core NinjaX framework -->
         <dependency>
             <groupId>org.r10r</groupId>
-            <artifactId>ninja-core</artifactId>
+            <artifactId>ninja-jetty</artifactId>
             <version>${ninja.version}</version>
         </dependency>
         <dependency>

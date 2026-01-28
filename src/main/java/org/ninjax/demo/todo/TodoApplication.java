@@ -4,13 +4,13 @@ import org.ninjax.demo.todo.tasks.TaskService;
 import org.ninjax.demo.todo.tasks.TodoController;
 import org.ninjax.demo.todo.tasks.TaskRepository;
 import java.util.Optional;
-import org.ninjax.core.NinjaJetty;
 import org.ninjax.core.Router;
 import org.ninjax.core.properties.NinjaProperties;
 import org.ninjax.db.jdbi.NinjaJdbiImpl;
 import org.ninjax.db.hikari.NinjaDbHikariProvider;
 import org.ninjax.db.flyway.NinjaFlywayMigrator;
 import org.ninjax.db.jdbc.NinjaDatasourcePropertiesExtractor;
+import org.ninjax.jetty.NinjaJetty;
 import org.ninjax.json.Json;
 
 public class TodoApplication {
