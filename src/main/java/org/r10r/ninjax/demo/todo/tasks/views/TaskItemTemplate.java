@@ -1,10 +1,10 @@
-package org.ninjax.demo.todo.tasks.views;
+package org.r10r.ninjax.demo.todo.tasks.views;
 
 import java.util.Map;
-import org.ninjax.demo.todo.tasks.Task;
-import org.ninjax.htmltemplate.Html;
-import org.ninjax.htmltemplate.NinjaHtmlTemplate;
-import org.ninjax.htmltemplate.NinjaHtmlTemplateTool;
+import org.r10r.ninjax.demo.todo.tasks.Task;
+import org.r10r.ninjax.htmltemplate.Html;
+import org.r10r.ninjax.htmltemplate.NinjaHtmlTemplate;
+import org.r10r.ninjax.htmltemplate.NinjaHtmlTemplateTool;
 
 public class TaskItemTemplate {
 

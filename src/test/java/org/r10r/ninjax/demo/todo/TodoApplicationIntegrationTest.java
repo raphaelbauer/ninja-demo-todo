@@ -1,5 +1,6 @@
-package org.ninjax.demo.todo;
+package org.r10r.ninjax.demo.todo;
 
+import org.r10r.ninjax.demo.todo.TodoApplication;
 import static com.google.common.truth.Truth.assertThat;
 
 import com.fasterxml.jackson.databind.JsonNode;
@@ -7,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.ninjax.test.HttpTestClient;
+import org.r10r.ninjax.test.HttpTestClient;
 
 import java.io.IOException;
 import java.net.InetAddress;

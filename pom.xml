@@ -3,14 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.myproject</groupId>
-    <artifactId>ninja-demo-todo</artifactId>
+    <artifactId>ninjax-demo-todo</artifactId>
     <version>1.0</version>
-    <name>ninja-demo-todo</name>
+    <name>ninjax-demo-todo</name>
     <description>Demo application showcasing NinjaX framework with JDBI, H2, and templating</description>
 
 
     <properties>
-        <ninja.version>0.2.14</ninja.version>
+        <ninja.version>0.2.16</ninja.version>
         <junit.version>6.0.2</junit.version>
     </properties>
 
@@ -18,41 +18,41 @@
         <!-- Core NinjaX framework -->
         <dependency>
             <groupId>org.r10r</groupId>
-            <artifactId>ninja-jetty</artifactId>
+            <artifactId>ninjax-jetty</artifactId>
             <version>${ninja.version}</version>
         </dependency>
         <dependency>
             <groupId>org.r10r</groupId>
-            <artifactId>ninja-json-jackson</artifactId>
+            <artifactId>ninjax-json-jackson</artifactId>
             <version>${ninja.version}</version>
         </dependency>
         
         <!-- Database components -->
         <dependency>
             <groupId>org.r10r</groupId>
-            <artifactId>ninja-db-common</artifactId>
+            <artifactId>ninjax-db-common</artifactId>
             <version>${ninja.version}</version>
         </dependency>
         <dependency>
             <groupId>org.r10r</groupId>
-            <artifactId>ninja-db-jdbi</artifactId>
+            <artifactId>ninjax-db-jdbi</artifactId>
             <version>${ninja.version}</version>
         </dependency>
         <dependency>
             <groupId>org.r10r</groupId>
-            <artifactId>ninja-db-hikari</artifactId>
+            <artifactId>ninjax-db-hikari</artifactId>
             <version>${ninja.version}</version>
         </dependency>
         <dependency>
             <groupId>org.r10r</groupId>
-            <artifactId>ninja-db-flyway</artifactId> 
+            <artifactId>ninjax-db-flyway</artifactId> 
             <version>${ninja.version}</version>
         </dependency>
         
         <!-- Template engine -->
         <dependency>
             <groupId>org.r10r</groupId>
-            <artifactId>ninja-template</artifactId>
+            <artifactId>ninjax-template</artifactId>
             <version>${ninja.version}</version>
         </dependency>
         <dependency>
@@ -88,13 +88,13 @@
         </dependency>
         <dependency>
             <groupId>org.r10r</groupId>
-            <artifactId>ninja-test-utils</artifactId>
+            <artifactId>ninjax-test-utils</artifactId>
             <version>${ninja.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.r10r</groupId>
-            <artifactId>ninja-test-db-utils</artifactId>
+            <artifactId>ninjax-test-db-utils</artifactId>
             <version>${ninja.version}</version>
             <scope>test</scope>
         </dependency>
@@ -136,18 +136,10 @@
             </plugin>
             <plugin>
                 <groupId>org.r10r</groupId>
-                <artifactId>ninja-maven-plugin</artifactId>
+                <artifactId>ninjax-maven-plugin</artifactId>
                 <version>${ninja.version}</version>
                 <configuration>
-                    <mainClass>org.ninjax.demo.todo.TodoApplication</mainClass>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>3.5.0</version>
-                <configuration>
-                    <mainClass>org.ninjax.demo.todo.TodoApplication</mainClass>
+                    <mainClass>org.r10r.ninjax.demo.todo.TodoApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

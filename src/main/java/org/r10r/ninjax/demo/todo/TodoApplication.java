@@ -1,17 +1,17 @@
-package org.ninjax.demo.todo;
+package org.r10r.ninjax.demo.todo;
 
-import org.ninjax.demo.todo.tasks.TaskService;
-import org.ninjax.demo.todo.tasks.TodoController;
-import org.ninjax.demo.todo.tasks.TaskRepository;
+import org.r10r.ninjax.demo.todo.tasks.TaskService;
+import org.r10r.ninjax.demo.todo.tasks.TodoController;
+import org.r10r.ninjax.demo.todo.tasks.TaskRepository;
 import java.util.Optional;
-import org.ninjax.core.Router;
-import org.ninjax.core.properties.NinjaProperties;
-import org.ninjax.db.jdbi.NinjaJdbiImpl;
-import org.ninjax.db.hikari.NinjaDbHikariProvider;
-import org.ninjax.db.flyway.NinjaFlywayMigrator;
-import org.ninjax.db.jdbc.NinjaDatasourcePropertiesExtractor;
-import org.ninjax.jetty.NinjaJetty;
-import org.ninjax.json.Json;
+import org.r10r.ninjax.core.Router;
+import org.r10r.ninjax.core.properties.NinjaProperties;
+import org.r10r.ninjax.db.jdbi.NinjaJdbiImpl;
+import org.r10r.ninjax.db.hikari.NinjaDbHikariProvider;
+import org.r10r.ninjax.db.flyway.NinjaFlywayMigrator;
+import org.r10r.ninjax.db.jdbc.NinjaDatasourcePropertiesExtractor;
+import org.r10r.ninjax.jetty.NinjaJetty;
+import org.r10r.ninjax.json.Json;
 
 public class TodoApplication {
 
@@ -50,10 +50,9 @@ public class TodoApplication {
         this(MockableComponents.nothingMocked());
     }
 
-    public static void main(String[] args) {
+    public void main() {
         new TodoApplication();
     }
-    
 
     // For testing only
     public record MockableComponents(Optional<TaskService> taskService) {

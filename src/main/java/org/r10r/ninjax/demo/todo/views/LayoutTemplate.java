@@ -1,9 +1,9 @@
-package org.ninjax.demo.todo.views;
+package org.r10r.ninjax.demo.todo.views;
 
 import java.util.Map;
 import java.util.Optional;
-import org.ninjax.htmltemplate.NinjaHtmlTemplate;
-import org.ninjax.htmltemplate.NinjaHtmlTemplateTool;
+import org.r10r.ninjax.htmltemplate.NinjaHtmlTemplate;
+import org.r10r.ninjax.htmltemplate.NinjaHtmlTemplateTool;
 
 public class LayoutTemplate {
 

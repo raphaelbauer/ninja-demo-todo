@@ -1,8 +1,8 @@
-package org.ninjax.demo.todo;
+package org.r10r.ninjax.demo.todo;
 
-import org.ninjax.demo.todo.tasks.TaskRepository;
-import org.ninjax.demo.todo.tasks.TaskService;
-import org.ninjax.demo.todo.tasks.Task;
+import org.r10r.ninjax.demo.todo.tasks.TaskRepository;
+import org.r10r.ninjax.demo.todo.tasks.TaskService;
+import org.r10r.ninjax.demo.todo.tasks.Task;
 import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.BeforeEach;

@@ -1,6 +1,6 @@
-package org.ninjax.demo.todo;
+package org.r10r.ninjax.demo.todo;
 
-import org.ninjax.demo.todo.tasks.TaskRepository;
+import org.r10r.ninjax.demo.todo.tasks.TaskRepository;
 import com.google.common.truth.Truth;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -9,11 +9,11 @@ import java.util.Optional;
 import java.util.UUID;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
-import org.ninjax.db.flyway.NinjaFlywayMigrator;
-import org.ninjax.db.hikari.NinjaDbHikariProvider;
-import org.ninjax.db.jdbc.NinjaDatasourceProperties;
-import org.ninjax.db.jdbc.NinjaDatasourcesProperties;
-import org.ninjax.db.jdbi.NinjaJdbiImpl;
+import org.r10r.ninjax.db.flyway.NinjaFlywayMigrator;
+import org.r10r.ninjax.db.hikari.NinjaDbHikariProvider;
+import org.r10r.ninjax.db.jdbc.NinjaDatasourceProperties;
+import org.r10r.ninjax.db.jdbc.NinjaDatasourcesProperties;
+import org.r10r.ninjax.db.jdbi.NinjaJdbiImpl;
 
 
 public class TaskRepositoryTest {

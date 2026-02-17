@@ -1,4 +1,4 @@
-package org.ninjax.demo.todo.tasks;
+package org.r10r.ninjax.demo.todo.tasks;
 
 import java.util.List;
 

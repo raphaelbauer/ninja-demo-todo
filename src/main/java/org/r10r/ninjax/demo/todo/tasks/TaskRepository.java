@@ -1,4 +1,4 @@
-package org.ninjax.demo.todo.tasks;
+package org.r10r.ninjax.demo.todo.tasks;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.Optional;
 
 import org.jdbi.v3.core.Jdbi;
 import org.jdbi.v3.core.mapper.reflect.ConstructorMapper;
-import org.ninjax.db.jdbi.NinjaJdbi;
+import org.r10r.ninjax.db.jdbi.NinjaJdbi;
 
 public class TaskRepository {
 

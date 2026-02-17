@@ -1,11 +1,11 @@
-package org.ninjax.demo.todo.tasks;
+package org.r10r.ninjax.demo.todo.tasks;
 
-import org.ninjax.core.Request;
-import org.ninjax.core.Result;
-import org.ninjax.demo.todo.tasks.views.TodoTemplateService;
+import org.r10r.ninjax.core.Request;
+import org.r10r.ninjax.core.Result;
+import org.r10r.ninjax.demo.todo.tasks.views.TodoTemplateService;
 
 import java.util.List;
-import org.ninjax.json.Json;
+import org.r10r.ninjax.json.Json;
 
 public class TodoController {
 

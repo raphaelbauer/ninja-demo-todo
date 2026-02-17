@@ -1,7 +1,7 @@
-package org.ninjax.demo.todo.tasks.views;
+package org.r10r.ninjax.demo.todo.tasks.views;
 
-import org.ninjax.demo.todo.tasks.Task;
-import org.ninjax.htmltemplate.NinjaHtmlTemplate;
+import org.r10r.ninjax.demo.todo.tasks.Task;
+import org.r10r.ninjax.htmltemplate.NinjaHtmlTemplate;
 
 import java.util.List;
 
