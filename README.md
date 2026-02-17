@@ -29,7 +29,7 @@ A simple task list application demonstrating the NinjaX Java web framework with 
 ./mvnw clean package
 
 # Run the application
-./mvnw ninja:run
+./mvnw ninjax:run
 ```
 
 The application will start on `http://localhost:8080`
